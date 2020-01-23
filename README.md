@@ -2,7 +2,7 @@
 
 ## About
 
-Tutorial to setup ESLint and Prettier. ESLint scans your code and helps find syntax errors. Prettier will format your code to follow industry standards and best practices. By combining the two to work in tandem you'll have tastiest looking code. All you'll have to do is save, ESLint and Prettier will take care of the rest.
+Tutorial to setup [ESLint](https://https://eslint.org/) and [Prettier](https://https://prettier.io/). ESLint scans your code and helps find syntax errors. Prettier will format your code to follow industry standards and best practices. By combining the two to work in tandem you'll have tastiest looking code. All you'll have to do is save, ESLint and Prettier will take care of the rest.
 
 ## Steps
 
@@ -14,7 +14,7 @@ First we'll need to install the following Extensions:
 
 [Prettier](https://https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-Then you'll want to open your Command Palette ( ⌘ + ⇧ + p ) and search for:
+Then you'll want to open your Command Palette (`⌘` `⇧` `p`) and search for:
 
 > Preferences: Open Settings (JSON)
 
@@ -40,23 +40,36 @@ This will open a file named "settings.json" to which you'll add the following:
 ]
 ```
 
+IMPORTANT: Make sure that you delete or disable any auto save functionality settings.
+
+```json
+"files.autoSave": "afterDelay",
+"files.autoSaveDelay": 1000,
+```
+
 ### Project Settings
 
 Every time you start a new project you'll need to run through these steps:
 
 #### Initialize npm
 
-`npm init`
+```bash
+npm init
+```
 
 #### Install devDependencies
 
-`npm i -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react prettier`
+```bash
+npm i -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react prettier
+```
 
 #### ESLint Config
 
 Run the following in your root folder of the project:
 
-`touch .eslintrc.json`
+```bash
+touch .eslintrc.json
+```
 
 Add the following configuration to the newly created file ".eslintrc.json":
 
@@ -76,7 +89,9 @@ For more ESLint configuration see the [docs](https://eslint.org/docs/user-guide/
 
 Run the following in your root folder of the project:
 
-`touch .prettierrc`
+```bash
+touch .prettierrc
+```
 
 Add the following configuration to your newly created file ".prettierrc":
 

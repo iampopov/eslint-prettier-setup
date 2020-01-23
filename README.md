@@ -2,11 +2,15 @@
 
 ## About
 
-Tutorial to setup [ESLint](https://https://eslint.org/) and [Prettier](https://https://prettier.io/). ESLint scans your code and helps find syntax errors. Prettier will format your code to follow industry standards and best practices. By combining the two to work in tandem you'll have tastiest looking code. All you'll have to do is save, ESLint and Prettier will take care of the rest.
+Tutorial to setup [ESLint](https://https://eslint.org/) and [Prettier](https://https://prettier.io/). ESLint scans your code and helps find syntax errors. Prettier will format your code to follow industry standards and best practices. By combining the two to work in tandem you'll have the tastiest looking code. All you'll have to do is save, ESLint and Prettier will take care of the rest.
 
 ## Steps
 
-### VS Code Settings
+You can begin by cloning the repo to your computer or by hitting the Star at the top of this page for future reference.
+
+### VS Code
+
+#### Extensions
 
 First we'll need to install the following Extensions:
 
@@ -14,11 +18,13 @@ First we'll need to install the following Extensions:
 
 [Prettier](https://https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
+#### Workspace Settings
+
 Then you'll want to open your Command Palette (`⌘` `⇧` `p`) and search for:
 
 > Preferences: Open Settings (JSON)
 
-This will open a file named "settings.json" to which you'll add the following:
+This will open a file named "settings.json" to which you'll add the following code snippet:
 
 ```json
 "[javascript]": {
@@ -39,6 +45,12 @@ This will open a file named "settings.json" to which you'll add the following:
   "javascriptreact"
 ]
 ```
+
+You can also copy the code from inside this repo.
+
+> .vscode/settings.json
+
+**Just make sure all of your JSON settings live inside of one object, all keys have double quotes, and you don't have any trailing commas.**
 
 IMPORTANT: Make sure that you delete or disable any auto save functionality settings.
 

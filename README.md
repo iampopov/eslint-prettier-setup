@@ -16,7 +16,7 @@ First we'll need to install the following Extensions:
 
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-[Prettier](https://https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 #### Workspace Settings
 
@@ -48,7 +48,7 @@ This will open a file named "settings.json" to which you'll add the following co
 
 _Just make sure all of your JSON settings live inside of one object, all keys have double quotes, and you don't have any trailing commas._
 
-**IMPORTANT**: Make sure that you delete or disable any functionality for auto saving such as:
+**IMPORTANT**: Make sure that you delete or disable any functionality for autosaving such as:
 
 ```json
 "files.autoSave": "afterDelay",
@@ -59,7 +59,7 @@ _Just make sure all of your JSON settings live inside of one object, all keys ha
 
 Every time you start a new project you'll need to run through these steps:
 
-#### Initialize npm
+#### Initialize package.json
 
 ```bash
 npm init
@@ -115,7 +115,7 @@ See the following Prettier [docs](https://prettier.io/docs/en/options.html) for 
 
 ### Finishing Remarks
 
-You're set. Hop over to a React or Vanilla JavaScript project and check out all of the red squigglies. Run `⌘` `s` to save and you'll see ESLint and Prettier format and provide feedback to your code.
+You're set. Hop over to a React.js or Vanilla JavaScript project and check out all of the red squigglies. Run `⌘` `s` to save and you'll see ESLint and Prettier format and provide feedback to your code. If you're still confused check out the files within this repository for a guide on how your files should be setup.
 
 ## Author
 

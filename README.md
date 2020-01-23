@@ -2,7 +2,7 @@
 
 ## About
 
-Tutorial to setup [ESLint](https://https://eslint.org/) and [Prettier](https://https://prettier.io/). ESLint scans your code and helps find syntax errors. Prettier will format your code to follow industry standards and best practices. By combining the two to work in tandem you'll have the tastiest looking code. All you'll have to do is save, ESLint and Prettier will take care of the rest.
+Tutorial to setup [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/). ESLint scans your code to help find syntax errors. Prettier will format your code to follow industry standards and best practices. By combining the two to work in tandem you'll have the tastiest looking code. All you'll have to do is save, then let ESLint and Prettier will take care of the rest.
 
 ## Steps
 
@@ -46,13 +46,11 @@ This will open a file named "settings.json" to which you'll add the following co
 ]
 ```
 
-You can also copy the code from inside this repo.
+You can also copy the code [here](https://raw.githubusercontent.com/mahume/eslint-prettier-setup/master/.vscode/settings.json).
 
-> .vscode/settings.json
+_Just make sure all of your JSON settings live inside of one object, all keys have double quotes, and you don't have any trailing commas._
 
-**Just make sure all of your JSON settings live inside of one object, all keys have double quotes, and you don't have any trailing commas.**
-
-IMPORTANT: Make sure that you delete or disable any auto save functionality settings.
+**IMPORTANT**: Make sure that you delete or disable any auto save functionality settings.
 
 ```json
 "files.autoSave": "afterDelay",
@@ -77,7 +75,7 @@ npm i -D eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import
 
 #### ESLint Config
 
-Run the following in your root folder of the project:
+Create the following file in the root folder of your project:
 
 ```bash
 touch .eslintrc.json
@@ -99,7 +97,7 @@ For more ESLint configuration see the [docs](https://eslint.org/docs/user-guide/
 
 #### Prettier Config
 
-Run the following in your root folder of the project:
+Create the following file in the root folder of your project:
 
 ```bash
 touch .prettierrc
